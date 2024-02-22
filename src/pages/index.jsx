@@ -11,9 +11,6 @@ export async function loader() {
 export default function Index() {
   // Hook para mandar a llamar al louder
   const clients = useLoaderData();
-
-  // Error Boundaries
-  
   
   return (
     <>

@@ -9,6 +9,7 @@ import Index, { loader as loaderClient } from './pages';
 import NewClient, { action as actionNewClient } from './pages/NewClient';
 import ErrorPage from './components/ErrorPage';
 import Edit, { loader as loaderEditClient, action as actionEditClient } from './pages/Edit';
+import { action as actionDeleteClient } from './components/Clients';
 
 
 const router = createBrowserRouter([
@@ -32,6 +33,11 @@ const router = createBrowserRouter([
         element: <Edit />,
         loader: loaderEditClient,
         action: actionEditClient,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: '/clientes/:clientId/eliminar',
+        action: actionDeleteClient,
         errorElement: <ErrorPage />,
       },
     ],

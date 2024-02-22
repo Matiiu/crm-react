@@ -57,3 +57,14 @@ export async function putClient(id, data) {
     console.error(error?.message ?? error);
   }
 }
+
+export async function deleteClient(id) {
+  try {
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/${id}`, { 
+        method: 'DELETE'
+     })
+     await response.json();
+  } catch (error) {
+    console.error(error?.message ?? error);
+  }
+}
