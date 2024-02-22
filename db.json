@@ -1,11 +1,12 @@
 {
   "clientes": [
     {
-      "id": "1",
-      "nombre": "Juan",
-      "telefono": 102013313,
-      "email": "juan@juan.com",
-      "empresa": "Codigo Con Juan"
+      "nombre": "Juan (new)",
+      "empresa": "Codigo Con Juan",
+      "email": "juan@juan.es",
+      "telefono": "102013313",
+      "notas": "dwdw",
+      "id": "1"
     },
     {
       "id": "2",
@@ -15,11 +16,12 @@
       "empresa": "Codigo Con Juan"
     },
     {
-      "id": "3",
-      "nombre": "Josue",
-      "telefono": 31983913,
+      "nombre": "Josue perea",
+      "empresa": "Codigo Con Juan",
       "email": "josue@juan.com",
-      "empresa": "Codigo Con Juan"
+      "telefono": "31983913",
+      "notas": "wrwr",
+      "id": "3"
     },
     {
       "id": "4",
@@ -42,6 +44,62 @@
       "email": "matz@gmail.com",
       "telefono": "30129197",
       "notas": "Nuevo"
+    },
+    {
+      "id": "5142",
+      "nombre": "Juan",
+      "empresa": "Codigo Con Juan",
+      "email": "juan@juan.com",
+      "telefono": "102013313",
+      "notas": ""
+    },
+    {
+      "id": "e781",
+      "nombre": "",
+      "empresa": "Codigo Con Juan",
+      "email": "juan@juan.com",
+      "telefono": "102013313",
+      "notas": ""
+    },
+    {
+      "id": "c57d",
+      "nombre": "",
+      "empresa": "",
+      "email": "",
+      "telefono": "",
+      "notas": ""
+    },
+    {
+      "id": "7b48",
+      "nombre": "",
+      "empresa": "",
+      "email": "",
+      "telefono": "",
+      "notas": ""
+    },
+    {
+      "id": "c9b0",
+      "nombre": "",
+      "empresa": "",
+      "email": "",
+      "telefono": "",
+      "notas": ""
+    },
+    {
+      "id": "62af",
+      "nombre": "",
+      "empresa": "",
+      "email": "",
+      "telefono": "",
+      "notas": ""
+    },
+    {
+      "id": "3d3f",
+      "nombre": "Juan (new)",
+      "empresa": "1214742264",
+      "email": "mateotaveraramirez@gmail.com",
+      "telefono": "3012919707",
+      "notas": "dwd"
     }
   ]
 }

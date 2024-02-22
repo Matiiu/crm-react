@@ -1,7 +1,7 @@
 import { useLoaderData } from 'react-router-dom';
 import Clients from '../components/Clients';
 
-import { getClients } from '../api/getClients.js';
+import { getClients } from '../api/apiClients.js';
 
 export async function loader() {
   const clients = await getClients();
@@ -34,7 +34,6 @@ export default function Index() {
       ) : (
         <p className='text-center mt-10'>No hay Cleintes aún</p>
       )}
-      
     </>
   )
 }

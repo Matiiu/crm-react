@@ -1,4 +1,8 @@
+import { useNavigate } from 'react-router-dom';
+
 export default function Clients({ clients }) {
+  const navigate = useNavigate();
+
   return (
     <tbody>
           {clients.map(client => (
@@ -18,7 +22,7 @@ export default function Clients({ clients }) {
                 </td>
 
                 <td className='p-6 flex gap-3'>
-                  <button type="button">
+                  <button type="button" onClick={() => navigate(`clientes/${client.id}/editar`)}>
                     <span className='text-blue-600 hover:text-blue-700 uppercase font-bold text-xs'>Editar</span>
                   </button>
 

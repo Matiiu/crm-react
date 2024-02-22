@@ -4,7 +4,7 @@ import { useNavigate, Form, useActionData, redirect } from 'react-router-dom';
 import ClientForm from '../components/Form';
 import Error from '../components/Error';
 
-import { postClient } from '../api/getClients';
+import { postClient } from '../api/apiClients';
 
 export async function action({ request }) {
   const formData = await request.formData();
@@ -12,16 +12,16 @@ export async function action({ request }) {
   // Obtener todos los datos del formData
   const data = Object.fromEntries(formData);
   // Obtener un dato especifico por el 'name' del formulario
-  const email = formData.get('nombre');
-  const regex = new RegExp("([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\"\(\[\]!#-[^-~ \t]|(\\[\t -~]))+\")@([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\[[\t -Z^-~]*])");
+  const email = formData.get('email');
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const errors = [];
 
   Object.values(data).includes('') && errors.push('Todos lo campos son Obligatorios');
   !regex.test(email) && errors.push('El Email no es valido')
   
   // Retornar datos si hay errores
-  if(!!errors.lengt) return  errors;
-
+  if(!!errors.length) return errors;
+  // Crear Cliente
   await postClient(data);
   
   return redirect('/');
@@ -52,7 +52,7 @@ export default function NewClient() {
         </div>
 
         <div className='bg-white shadow rounded-md md:w-3/4 mx-auto px-5 py-10 mt-20'>
-          {errors?.length && errors.map((error, i) => <Error key={i}>{error}</Error>)}
+          {!!errors?.length && errors.map((error, i) => <Error key={i}>{error}</Error>)}
           <Form method="POST" noValidate>
             <ClientForm />
 
