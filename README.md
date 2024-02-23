@@ -1,7 +1,7 @@
 # React CRM
 
 #### 1. Instalar las dependencias
-	 `npm i`
+	 npm i
 
 #### 2. Crear un archivo .env en la raíz del proyecto con las siguentes variables:
 	`VITE_API_URL=http://localhost:3000/clientes
