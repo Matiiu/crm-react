@@ -19,7 +19,7 @@
 
 ## Si desea correr las pruebas
 1. Eliminar del package.json la linea 5: "type": "module",
-2. Agregar la url a la variable urlClient
+2. Agregar la url del API a la variable urlClient
 3. Correr las pruebas
 
 #### 
