@@ -4,14 +4,14 @@
 	 npm i
 
 #### 2. Crear un archivo .env en la raíz del proyecto con las siguentes variables:
-	`VITE_API_URL=http://localhost:3000/clientes
-	  VITE_DB_USER=root `
+	VITE_API_URL=http://localhost:3000/clientes
+	VITE_DB_USER=root
 
 #### 3. Correr la base de datos:
-	`json-server --watch db.json --port 3000`
+	json-server --watch db.json --port 3000
 
 #### 4. Correr la aplicación
-	 `npm run dev`
+	 npm run dev
 
 
 ------------
