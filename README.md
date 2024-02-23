@@ -11,7 +11,7 @@
 	json-server --watch db.json --port 3000
 
 #### 4. Correr la aplicación
-	 npm run dev
+	npm run dev
 
 
 ------------
@@ -19,8 +19,8 @@
 
 ## Si desea correr las pruebas:
  	Eliminar del package.json la linea 5: "type": "module",
-	 Agregar la url a la variable urlClient
-	 Usar el comando: `npm test`
+	Agregar la url a la variable urlClient
+	Usar el comando: `npm test`
 
 
 
