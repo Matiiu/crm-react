@@ -18,9 +18,10 @@
 
 
 ## Si desea correr las pruebas:
- 	Eliminar del package.json la linea 5: "type": "module",
-	Agregar la url a la variable urlClient
-	Usar el comando: `npm test`
+1- Eliminar del package.json la linea 5: "type": "module",
+2- Agregar la url a la variable urlClient
+3- Usar el comando: 
+	npm test
 
 
 
